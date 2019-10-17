@@ -1,4 +1,5 @@
 ﻿<Page
+    Name="solarizr"
     x:Class="Solarizr.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -6,25 +7,26 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" 
+    Height="700" Width="700" MinWidth="600" MinHeight="700" MaxWidth="600" MaxHeight="700">
 
     <RelativePanel>
         <Image Name="mainIcono" Source="Assets/solazul.png" Height="400" Width="auto" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True"></Image>
 
-        <TextBlock Name="lblUser" RelativePanel.Below="mainIcono" Text="Usuario" RelativePanel.AlignLeftWith=""></TextBlock>
-        <TextBox Name="txtbUser" RelativePanel.Below="lblUser" Width="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  ></TextBox>
+        <TextBlock Name="lblUser" RelativePanel.Below="mainIcono" Text="Usuario" Margin="100,10"></TextBlock>
+        <TextBox Name="txtbUser" RelativePanel.Below="lblUser" Width="400" RelativePanel.AlignHorizontalCenterWithPanel="True"  ></TextBox>
 
-        <TextBlock Name="lblPass" RelativePanel.Below="txtbUser" Text="Contraseña"></TextBlock>
-        <TextBox Name="txtbPass" RelativePanel.Below="lblPass" Width="400" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+        <TextBlock Name="lblPass" RelativePanel.Below="txtbUser" Text="Contraseña" Margin="100,10"></TextBlock>
+        <TextBox Name="txtbPass" RelativePanel.Below="lblPass" Width="400" RelativePanel.AlignHorizontalCenterWithPanel="True"/>
 
-        <ToggleSwitch Name="switchRemember" HorizontalAlignment="Center" Height="55" VerticalAlignment="Center" Width="100" RelativePanel.Below="txtbPass"/>
-        <TextBlock Name="lblRemember" Text="Recuerdame" RelativePanel.RightOf="switchRemember" RelativePanel.Below="txtbPass" Margin="10,0,0,0"></TextBlock>
+        <ToggleSwitch Name="switchRemember" HorizontalAlignment="Center" Height="55" VerticalAlignment="Center" Width="100" RelativePanel.Below="txtbPass" RelativePanel.AlignLeftWith="txtbPass"/>
+        <TextBlock Name="lblRemember" Text="Recuerdame" RelativePanel.RightOf="switchRemember" RelativePanel.Below="txtbPass"  Margin="8"></TextBlock>
 
-        <Button Name="btnLogin" Content="Entrar" Margin="0,10" RelativePanel.AlignRightWith="txtbPass" RelativePanel.Below="txtbPass"></Button>
-        <Button Name="btnSignUp" Content="Crear Cuenta" RelativePanel.Below="switchRemember" RelativePanel.AlignRightWith="txtbUser"></Button>
+        <Button Name="btnLogin" Content="Entrar" RelativePanel.AlignRightWith="txtbPass"  RelativePanel.Below="txtbPass" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
+        <Button Name="btnSignUp" Content="Crear Cuenta" RelativePanel.Below="btnLogin" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="0,10"></Button>
 
-        <HyperlinkButton Content="Contraseña olvidada" RelativePanel.Below="btnSignUp"></HyperlinkButton>
-
+        <HyperlinkButton Content="Contraseña olvidada" RelativePanel.Below="btnSignUp" RelativePanel.AlignHorizontalCenterWithPanel="True" ></HyperlinkButton>
+        
 
     </RelativePanel>
 </Page>
