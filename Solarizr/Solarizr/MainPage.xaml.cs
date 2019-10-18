@@ -26,10 +26,9 @@ namespace Solarizr
         public MainPage()
         {
             this.InitializeComponent();
-            ApplicationView.PreferredLaunchViewSize = new Size(600, 700);
+            ApplicationView.PreferredLaunchViewSize = new Size(600, 800);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
-            ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size(600, 700));
-
+            ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size { Width = 600, Height = 800 });
         }
 
         private void BtnLogin_Click(object sender, RoutedEventArgs e) {

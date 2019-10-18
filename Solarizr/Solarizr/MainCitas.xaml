@@ -5,12 +5,35 @@
     xmlns:local="using:Solarizr"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local1="using:Windows.ApplicationModel.Contacts"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="80,86,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="240,102,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+    <RelativePanel>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="0,608,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="84,608,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
 
-    </Grid>
+        <ListView x:Name="ContactsLV" ItemsSource="">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local1:Contact">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Grid.RowSpan="2" Source="Assets/grey-placeholder.png" Width="32"
+                    Height="32" HorizontalAlignment="Center" VerticalAlignment="Center"></Image>
+                        <TextBlock Grid.Column="1" Text="hola" Margin="12,6,0,0" 
+                    Style="{ThemeResource BaseTextBlockStyle}"/>
+                        <TextBlock  Grid.Column="1" Grid.Row="1" Text="Hola" Margin="12,0,0,6" 
+                    Style="{ThemeResource BodyTextBlockStyle}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </RelativePanel>
 </Page>

@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" 
-    Height="700" Width="700" MinWidth="600" MinHeight="700" MaxWidth="600" MaxHeight="700">
+    Height="800" Width="600" MinWidth="600" MinHeight="800" MaxWidth="600" MaxHeight="800">
 
     <RelativePanel>
         <Image Name="mainIcono" Source="Assets/solazul.png" Height="400" Width="auto" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True"></Image>

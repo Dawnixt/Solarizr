@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,9 @@ namespace Solarizr
         public MainCitas()
         {
             this.InitializeComponent();
+            ApplicationView.PreferredLaunchViewSize = new Size(600, 800);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size(600, 800));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
@@ -32,7 +36,7 @@ namespace Solarizr
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) {
-            //this.Frame.Navigate(typeof());
+            this.Frame.Navigate(typeof(citas));
         }
     }
 }
