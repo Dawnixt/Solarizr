@@ -20,11 +20,67 @@ namespace Solarizr
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class BlankPage1 : Page
+    public sealed partial class Notas : Page
     {
-        public BlankPage1()
+        public Notas()
         {
             this.InitializeComponent();
         }
+
+        #region NavigationView event handlers
+        private void myNavigation_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            foreach (NavigationViewItemBase item in myNavigation.MenuItems)
+            {
+                if (item is NavigationViewItem && item.Tag.ToString() == "MainCitas")
+                {
+
+                    myNavigation.SelectedItem = item;
+                    break;
+
+                }
+            }
+
+            this.Frame.Navigate(typeof(Notas));
+        }
+
+        private void myNavigation_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        {
+        }
+
+        private void myNavigation_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        {
+
+            TextBlock ItemContent = args.InvokedItem as TextBlock;
+            if (ItemContent != null)
+            {
+                switch (ItemContent.Tag)
+                {
+
+                    case "Nav_Citas":
+                        this.Frame.Navigate(typeof(MainCitas));
+                        break;
+
+                    case "Nav_Notas":
+                        this.Frame.Navigate(typeof(Notas));
+                        break;
+
+                    case "Nav_Setting":
+                        this.Frame.Navigate(typeof(MainCitas));
+                        break;
+
+                    case "Nav_Acerca":
+                        this.Frame.Navigate(typeof(MainCitas));
+                        break;
+
+                    case "Nav_Out":
+                        this.Frame.Navigate(typeof(MainPage));
+                        break;
+                }
+
+            }
+        }
+        #endregion
     }
 }
