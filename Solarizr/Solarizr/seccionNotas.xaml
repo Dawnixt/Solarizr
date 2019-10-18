@@ -1,5 +1,9 @@
 ﻿<Page
+<<<<<<< HEAD:Solarizr/Solarizr/seccionNotas.xaml
     x:Class="Solarizr.seccionNotas"
+=======
+    x:Class="Solarizr.Notas"
+>>>>>>> da6f53da992e86569e62fe2cec0c2b190a142c00:Solarizr/Solarizr/Notas.xaml
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Solarizr"
@@ -14,17 +18,26 @@
                     SelectionChanged="myNavigation_SelectionChanged"
                     ItemInvoked="myNavigation_ItemInvoked"
                     IsTabStop="False"
+                    IsSettingsVisible="True"
                     Header="Menu">
 
         <NavigationView.MenuItems>
 
-            <NavigationViewItem Icon="ContactInfo" Content="Citas" Name="ItemCitas"/>
-            <NavigationViewItem Icon="Edit" Content="Notas" Name="ItemNotas" Margin="0,6,0,0"></NavigationViewItem>
-            <NavigationViewItem Icon="Setting" Content="Ajustes" Margin="0,6,0,0"></NavigationViewItem>
-            <NavigationViewItem Icon="Contact" Content="Acerca" Name="ItemAbout" Margin="0,6,0,0"></NavigationViewItem>
-            <NavigationViewItem Icon="ClosePane" Content="Cerrar sesion" Name="ItemCerrar"></NavigationViewItem>
-
-
+            <NavigationViewItem Icon="ContactInfo" Tag="ItemCitas">
+                <TextBlock Tag="Nav_Citas">Citas</TextBlock>
+            </NavigationViewItem>
+            <NavigationViewItem Icon="Edit" Tag="ItemNotas" Margin="0,6,0,0">
+                <TextBlock Tag="Nav_Notas">Notas</TextBlock>
+            </NavigationViewItem>
+            <NavigationViewItem Icon="Setting" Margin="0,6,0,0" Tag="ItemSetting">
+                <TextBlock Tag="Nav_Setting">Ajustes</TextBlock>
+            </NavigationViewItem>
+            <NavigationViewItem Icon="Contact" Tag="ItemAbout" Margin="0,6,0,0">
+                <TextBlock Tag="Nav_Acerca">Acerca</TextBlock>
+            </NavigationViewItem>
+            <NavigationViewItem Icon="ClosePane" Tag="ItemCerrar" Margin="0,6,0,0">
+                <TextBlock Tag="Nav_Out">Cerrar sesion</TextBlock>
+            </NavigationViewItem>
         </NavigationView.MenuItems>
 
     </NavigationView>
