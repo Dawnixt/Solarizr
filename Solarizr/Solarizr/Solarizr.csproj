@@ -128,10 +128,10 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Notas.xaml.cs">
-      <DependentUpon>Notas.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="seccionNotas.xaml.cs">
+      <DependentUpon>seccionNotas.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -167,7 +167,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
+    <Page Include="seccionNotas.xaml">
+=======
     <Page Include="Notas.xaml">
+>>>>>>> da6f53da992e86569e62fe2cec0c2b190a142c00
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
