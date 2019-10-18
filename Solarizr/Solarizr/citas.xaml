@@ -13,8 +13,8 @@
     <RelativePanel>
         
         <TextBlock Name="tb1" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" FontSize="60" HorizontalAlignment="Center" FontFamily="Calibri">CITAS</TextBlock>
-        <TextBlock Name="tb2" Margin="0,30,0,0" RelativePanel.Below="tb1" RelativePanel.AlignHorizontalCenterWith="tb1" HorizontalAlignment="Center" FontSize="30">Cita :</TextBlock>
-        <TextBlock Name="tb3" Margin="0,30,0,0" RelativePanel.Below="tb2" RelativePanel.AlignHorizontalCenterWith="tb1" HorizontalAlignment="Center" FontSize="30">Direccion :</TextBlock>
+        <TextBlock Name="tb2" Margin="0,30,0,0" RelativePanel.Below="tb1" RelativePanel.AlignHorizontalCenterWith="tb1" HorizontalAlignment="Center" FontSize="30" Text="Cita :"></TextBlock>
+        <TextBlock Name="tb3" Margin="0,30,0,0" RelativePanel.Below="tb2" RelativePanel.AlignHorizontalCenterWith="tb1" HorizontalAlignment="Center" FontSize="30" Text="Direccion :"></TextBlock>
         <StackPanel Name="stp1" Margin="0,30" RelativePanel.Below="tb3" Orientation="Horizontal" HorizontalAlignment="Center" RelativePanel.AlignHorizontalCenterWithPanel="True">
             <AppBarButton Icon="Edit"></AppBarButton>
             <AppBarButton Icon="Map"></AppBarButton>
@@ -23,7 +23,7 @@
         </StackPanel>
         <maps:MapControl x:Name="Map" RelativePanel.Below="stp1" RelativePanel.AlignLeftWithPanel="True"  Margin="15,15,15,15"
                          RelativePanel.AlignRightWithPanel="True"
-                         RelativePanel.AlignBottomWithPanel="True" CornerRadius="30"
+                         RelativePanel.AlignBottomWithPanel="True" 
                 MapServiceToken="Bing_Maps_API_Token_To_Remove_MapControl_Error" />
     </RelativePanel>
 </Page>
