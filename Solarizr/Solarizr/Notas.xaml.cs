@@ -22,18 +22,16 @@ namespace Solarizr
     /// </summary>
     public sealed partial class Notas : Page
     {
-        public Notas()
-        {
+        public Notas() {
             this.InitializeComponent();
         }
 
         #region NavigationView event handlers
-        private void myNavigation_Loaded(object sender, RoutedEventArgs e)
-        {
+        private void myNavigation_Loaded(object sender, RoutedEventArgs e) {
 
             foreach (NavigationViewItemBase item in myNavigation.MenuItems)
             {
-                if (item is NavigationViewItem && item.Tag.ToString() == "MainCitas")
+                if (item is NavigationViewItem && item.Tag.ToString() == "Notas")
                 {
 
                     myNavigation.SelectedItem = item;
@@ -45,12 +43,10 @@ namespace Solarizr
             contentFrame.Navigate(typeof(Notas));
         }
 
-        private void myNavigation_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
-        {
+        private void myNavigation_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args) {
         }
 
-        private void myNavigation_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
-        {
+        private void myNavigation_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args) {
 
             TextBlock ItemContent = args.InvokedItem as TextBlock;
             if (ItemContent != null)
