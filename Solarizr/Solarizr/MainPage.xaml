@@ -19,14 +19,14 @@
         <TextBlock Name="lblPass" RelativePanel.Below="txtbUser" Text="Contraseña" Margin="100,10"></TextBlock>
         <TextBox Name="txtbPass" RelativePanel.Below="lblPass" Width="400" RelativePanel.AlignHorizontalCenterWithPanel="True"/>
 
-        <ToggleSwitch Name="switchRemember" HorizontalAlignment="Center" Height="55" VerticalAlignment="Center" Width="100" RelativePanel.Below="txtbPass" RelativePanel.AlignLeftWith="txtbPass"/>
-        <TextBlock Name="lblRemember" Text="Recuerdame" RelativePanel.RightOf="switchRemember" RelativePanel.Below="txtbPass"  Margin="8"></TextBlock>
+        <ToggleSwitch OnContent="Si" OffContent="No" Name="switchRemember" HorizontalAlignment="Center" Height="55" VerticalAlignment="Center" Width="86" RelativePanel.Below="txtbPass" RelativePanel.AlignLeftWith="txtbPass" AutomationProperties.LiveSetting="Off" Margin="0,0,0,0"/>
+        <TextBlock Name="lblRemember" Text="Recuerdame" RelativePanel.RightOf="switchRemember" RelativePanel.Below="txtbPass"  Margin="0,7"></TextBlock>
 
-        <Button Name="btnLogin" Content="Entrar" RelativePanel.AlignRightWith="txtbPass"  RelativePanel.Below="txtbPass" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
+        <Button Name="btnLogin" Content="Entrar" RelativePanel.AlignRightWith="txtbPass"  RelativePanel.Below="txtbPass" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BtnLogin_Click"></Button>
         <Button Name="btnSignUp" Content="Crear Cuenta" RelativePanel.Below="btnLogin" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="0,10"></Button>
 
         <HyperlinkButton Content="Contraseña olvidada" RelativePanel.Below="btnSignUp" RelativePanel.AlignHorizontalCenterWithPanel="True" ></HyperlinkButton>
-        
+
 
     </RelativePanel>
 </Page>

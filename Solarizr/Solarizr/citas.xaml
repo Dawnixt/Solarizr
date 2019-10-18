@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="Solarizr.citas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Solarizr"
+    xmlns:maps="using:Windows.UI.Xaml.Controls.Maps"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Height="700" Width="700" MinWidth="600" MinHeight="700" MaxWidth="600" MaxHeight="700">
+
+    <RelativePanel>
+        
+        <TextBlock Name="tb1" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" FontSize="60" HorizontalAlignment="Center" FontFamily="Calibri">CITAS</TextBlock>
+        <TextBlock Name="tb2" Margin="5,30,0,0" RelativePanel.Below="tb1" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignHorizontalCenterWith="tb1" HorizontalAlignment="Center" FontSize="30" Text="Cita :"></TextBlock>
+        <TextBlock Name="tb3" Margin="5,30,0,0" RelativePanel.Below="tb2" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignHorizontalCenterWith="tb1" HorizontalAlignment="Center" FontSize="30" Text="Direccion :"></TextBlock>
+        <StackPanel Name="stp1" Margin="0,30" RelativePanel.Below="tb3" Orientation="Horizontal" HorizontalAlignment="Center" RelativePanel.AlignHorizontalCenterWithPanel="True">
+            <AppBarButton Icon="Edit"></AppBarButton>
+            <AppBarButton Icon="Map"></AppBarButton>
+            <AppBarButton Icon="Upload"></AppBarButton>
+            <AppBarButton Icon="BrowsePhotos"></AppBarButton>
+        </StackPanel>
+        <maps:MapControl x:Name="Map" RelativePanel.Below="stp1" RelativePanel.AlignLeftWithPanel="True"  Margin="5,5,5,5"
+                         RelativePanel.AlignRightWithPanel="True"
+                         RelativePanel.AlignBottomWithPanel="True" 
+                MapServiceToken="Bing_Maps_API_Token_To_Remove_MapControl_Error" />
+    </RelativePanel>
+</Page>
