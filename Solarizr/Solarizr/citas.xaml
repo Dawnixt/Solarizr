@@ -24,7 +24,6 @@
         <maps:MapControl x:Name="Map" RelativePanel.Below="stp1" RelativePanel.AlignLeftWithPanel="True"  
                          RelativePanel.AlignRightWithPanel="True"
                          RelativePanel.AlignBottomWithPanel="True" 
-                         lat
                 MapServiceToken="Bing_Maps_API_Token_To_Remove_MapControl_Error" />
     </RelativePanel>
 </Page>
