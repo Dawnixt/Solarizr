@@ -31,5 +31,9 @@ namespace Solarizr
             ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size(600, 700));
 
         }
+
+        private void BtnLogin_Click(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(MainCitas));
+        }
     }
 }
