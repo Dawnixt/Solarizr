@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Solarizr.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Solarizr"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <NavigationView Name="myNavigation"
+                    Margin="0,12,0,0"
+                    Loaded="myNavigation_Loaded"
+                    SelectionChanged="myNavigation_SelectionChanged"
+                    ItemInvoked="myNavigation_ItemInvoked"
+                    IsTabStop="False"
+                    Header="Menu">
+
+        <NavigationView.MenuItems>
+
+            <NavigationViewItem Icon="ContactInfo" Content="Citas" Name="ItemCitas"/>
+            <NavigationViewItem Icon="Edit" Content="Notas" Name="ItemNotas" Margin="0,6,0,0"></NavigationViewItem>
+            <NavigationViewItem Icon="Setting" Content="Ajustes" Margin="0,6,0,0"></NavigationViewItem>
+            <NavigationViewItem Icon="Contact" Content="Acerca" Name="ItemAbout" Margin="0,6,0,0"></NavigationViewItem>
+            <NavigationViewItem Icon="ClosePane" Content="Cerrar sesion" Name="ItemCerrar"></NavigationViewItem>
+
+
+        </NavigationView.MenuItems>
+
+    </NavigationView>
+</Page>
