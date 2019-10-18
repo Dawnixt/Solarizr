@@ -20,16 +20,14 @@ namespace Solarizr
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class Notas : Page
+    public sealed partial class seccionNotas : Page
     {
-        public Notas()
-        {
+        public seccionNotas() {
             this.InitializeComponent();
         }
 
         #region NavigationView event handlers
-        private void myNavigation_Loaded(object sender, RoutedEventArgs e)
-        {
+        private void myNavigation_Loaded(object sender, RoutedEventArgs e) {
 
             foreach (NavigationViewItemBase item in myNavigation.MenuItems)
             {
@@ -42,15 +40,13 @@ namespace Solarizr
                 }
             }
 
-            contentFrame.Navigate(typeof(Notas));
+            this.Frame.Navigate(typeof(seccionNotas));
         }
 
-        private void myNavigation_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
-        {
+        private void myNavigation_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args) {
         }
 
-        private void myNavigation_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
-        {
+        private void myNavigation_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args) {
 
             TextBlock ItemContent = args.InvokedItem as TextBlock;
             if (ItemContent != null)
@@ -59,23 +55,23 @@ namespace Solarizr
                 {
 
                     case "Nav_Citas":
-                        contentFrame.Navigate(typeof(MainCitas));
+                        this.Frame.Navigate(typeof(MainCitas));
                         break;
 
                     case "Nav_Notas":
-                        contentFrame.Navigate(typeof(Notas));
+                        this.Frame.Navigate(typeof(seccionNotas));
                         break;
 
                     case "Nav_Setting":
-                        contentFrame.Navigate(typeof(MainCitas));
+                        this.Frame.Navigate(typeof(MainCitas));
                         break;
 
                     case "Nav_Acerca":
-                        contentFrame.Navigate(typeof(MainCitas));
+                        this.Frame.Navigate(typeof(MainCitas));
                         break;
 
                     case "Nav_Out":
-                        contentFrame.Navigate(typeof(MainPage));
+                        this.Frame.Navigate(typeof(MainPage));
                         break;
                 }
 
