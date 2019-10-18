@@ -122,6 +122,9 @@
     <Compile Include="citas.xaml.cs">
       <DependentUpon>citas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainCitas.xaml.cs">
+      <DependentUpon>MainCitas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
