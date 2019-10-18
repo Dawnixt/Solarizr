@@ -39,6 +39,6 @@
                 <TextBlock Tag="Nav_Out">Cerrar sesion</TextBlock>
             </NavigationViewItem>
         </NavigationView.MenuItems>
-
+        <Frame x:Name="contentFrame"></Frame>
     </NavigationView>
 </Page>

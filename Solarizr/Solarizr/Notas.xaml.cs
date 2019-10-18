@@ -42,7 +42,7 @@ namespace Solarizr
                 }
             }
 
-            this.Frame.Navigate(typeof(Notas));
+            contentFrame.Navigate(typeof(Notas));
         }
 
         private void myNavigation_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
@@ -59,23 +59,23 @@ namespace Solarizr
                 {
 
                     case "Nav_Citas":
-                        this.Frame.Navigate(typeof(MainCitas));
+                        contentFrame.Navigate(typeof(MainCitas));
                         break;
 
                     case "Nav_Notas":
-                        this.Frame.Navigate(typeof(Notas));
+                        contentFrame.Navigate(typeof(Notas));
                         break;
 
                     case "Nav_Setting":
-                        this.Frame.Navigate(typeof(MainCitas));
+                        contentFrame.Navigate(typeof(MainCitas));
                         break;
 
                     case "Nav_Acerca":
-                        this.Frame.Navigate(typeof(MainCitas));
+                        contentFrame.Navigate(typeof(MainCitas));
                         break;
 
                     case "Nav_Out":
-                        this.Frame.Navigate(typeof(MainPage));
+                        contentFrame.Navigate(typeof(MainPage));
                         break;
                 }
 
