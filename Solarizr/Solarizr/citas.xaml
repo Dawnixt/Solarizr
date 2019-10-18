@@ -14,8 +14,11 @@
         <TextBlock Name="tb1" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" FontSize="60" HorizontalAlignment="Center" FontFamily="Calibri">CITAS</TextBlock>
         <TextBlock Name="tb2" Margin="0,30,0,0" RelativePanel.Below="tb1" RelativePanel.AlignHorizontalCenterWith="tb1" HorizontalAlignment="Center" FontSize="30">Cita :</TextBlock>
         <TextBlock Name="tb3" Margin="0,30,0,0" RelativePanel.Below="tb2" RelativePanel.AlignHorizontalCenterWith="tb1" HorizontalAlignment="Center" FontSize="30">Direccion :</TextBlock>
-        <StackPanel Name="stp1" RelativePanel.Below="tb3" HorizontalAlignment="Center">
+        <StackPanel Name="stp1" Margin="0,30" RelativePanel.Below="tb3" Orientation="Horizontal" HorizontalAlignment="Center" RelativePanel.AlignHorizontalCenterWithPanel="True">
             <AppBarButton Icon="Edit"></AppBarButton>
+            <AppBarButton Icon="Map"></AppBarButton>
+            <AppBarButton Icon="Upload"></AppBarButton>
+            <AppBarButton Icon="BrowsePhotos"></AppBarButton>
         </StackPanel>
     </RelativePanel>
 </Page>
