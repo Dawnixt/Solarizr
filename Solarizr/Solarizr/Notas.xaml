@@ -14,6 +14,7 @@
                     SelectionChanged="myNavigation_SelectionChanged"
                     ItemInvoked="myNavigation_ItemInvoked"
                     IsTabStop="False"
+                    IsSettingsVisible="True"
                     Header="Menu">
 
         <NavigationView.MenuItems>
