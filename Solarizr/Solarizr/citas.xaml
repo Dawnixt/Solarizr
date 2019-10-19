@@ -16,7 +16,7 @@
         <TextBlock Name="tb2" Margin="5,30,0,0" RelativePanel.Below="tb1" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignHorizontalCenterWith="tb1" HorizontalAlignment="Center" FontSize="30" Text="Cita :"></TextBlock>
         <TextBlock Name="tb3" Margin="5,30,0,0" RelativePanel.Below="tb2" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignHorizontalCenterWith="tb1" HorizontalAlignment="Center" FontSize="30" Text="Direccion :"></TextBlock>
         <StackPanel Name="stp1" Margin="0,30" RelativePanel.Below="tb3" Orientation="Horizontal" HorizontalAlignment="Center" RelativePanel.AlignHorizontalCenterWithPanel="True">
-            <AppBarButton Icon="Edit"></AppBarButton>
+            <AppBarButton Icon="Edit" Click="AppBarButton_Click"></AppBarButton>
             <AppBarButton Icon="Map"></AppBarButton>
             <AppBarButton Icon="Upload"></AppBarButton>
             <AppBarButton Icon="BrowsePhotos"></AppBarButton>

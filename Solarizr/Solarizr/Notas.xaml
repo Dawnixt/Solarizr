@@ -7,34 +7,34 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    <NavigationView Name="myNavigation"
-                    Margin="0,12,0,0"
+    <RelativePanel>
+        <NavigationView Name="myNavigation" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True"
                     Loaded="myNavigation_Loaded"
                     SelectionChanged="myNavigation_SelectionChanged"
                     ItemInvoked="myNavigation_ItemInvoked"
                     IsTabStop="False"
                     Header="Menu">
 
-        <NavigationView.MenuItems>
+            <NavigationView.MenuItems>
 
-            <NavigationViewItem Icon="ContactInfo" Tag="ItemCitas">
-                <TextBlock Tag="navCitas">Citas</TextBlock>
-            </NavigationViewItem>
+                <NavigationViewItem Icon="ContactInfo" Tag="ItemCitas">
+                    <TextBlock Tag="navCitas">Citas</TextBlock>
+                </NavigationViewItem>
                 <NavigationViewItem Icon="Edit" Tag="ItemNotas" Margin="0,6,0,0" >
-                <TextBlock Tag="navNotas">Notas</TextBlock>
-            </NavigationViewItem>
-            <NavigationViewItem Icon="Setting" Tag="itemAjustes" Margin="0,6,0,0">
-                <TextBlock Tag="navAjustes">Ajustes</TextBlock>
-            </NavigationViewItem>
-            <NavigationViewItem Icon="Contact" Tag="itemAcerca" Margin="0,6,0,0">
-                <TextBlock Tag="navInfo">Acerca de</TextBlock>
-            </NavigationViewItem>
-            <NavigationViewItem Icon="ClosePane" Tag="itemCerrar sesion" >
-                <TextBlock Tag="navSesion">Cerrar Sesion</TextBlock>
-            </NavigationViewItem>
+                    <TextBlock Tag="navNotas">Notas</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="Setting" Tag="itemAjustes" Margin="0,6,0,0">
+                    <TextBlock Tag="navAjustes">Ajustes</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="Contact" Tag="itemAcerca" Margin="0,6,0,0">
+                    <TextBlock Tag="navInfo">Acerca de</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="ClosePane" Tag="itemCerrar sesion" >
+                    <TextBlock Tag="navSesion">Cerrar Sesion</TextBlock>
+                </NavigationViewItem>
 
-        </NavigationView.MenuItems>
-        <Frame x:Name="contentFrame"></Frame>
-    </NavigationView>
+            </NavigationView.MenuItems>
+            <Frame x:Name="contentFrame"></Frame>
+        </NavigationView>
+    </RelativePanel>
 </Page>
