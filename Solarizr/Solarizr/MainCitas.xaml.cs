@@ -26,6 +26,9 @@ namespace Solarizr
         public MainCitas()
         {
             this.InitializeComponent();
+            ApplicationView.PreferredLaunchViewSize = new Size(600, 800);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size { Width = 600, Height = 800 });
         }
 
         private void Lista_SelectionChanged(object sender, SelectionChangedEventArgs e) {
