@@ -7,7 +7,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
+    
+    <RelativePanel>
+
+        <StackPanel x:Name="Title" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock FontSize="60">Notas</TextBlock>
+        </StackPanel>
+
+        <CheckBox x:Name="ViableCheck" RelativePanel.Below="Title" RelativePanel.AlignRightWithPanel="True" Margin="0,120,50,0"></CheckBox>
+        <TextBlock x:Name="ViableText" RelativePanel.LeftOf="ViableCheck" FontSize="35" RelativePanel.AlignBottomWith="ViableCheck" RelativePanel.AlignLeftWithPanel="True" TextAlignment="Left" Margin="100,0,50,0" >Viable</TextBlock>
+
+        <TextBox RelativePanel.Below="ViableText" TextWrapping="Wrap" RelativePanel.AlignRightWith="ViableCheck" RelativePanel.AlignLeftWith="ViableText" RelativePanel.AlignBottomWithPanel="True" Margin="100" ></TextBox>
         
-    </Grid>
+    </RelativePanel>
 </Page>
