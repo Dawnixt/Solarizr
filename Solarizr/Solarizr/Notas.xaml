@@ -14,10 +14,12 @@
             <TextBlock FontSize="60">Notas</TextBlock>
         </StackPanel>
 
-        <CheckBox x:Name="ViableCheck" RelativePanel.Below="Title" RelativePanel.AlignRightWithPanel="True" Margin="0,120,50,0"></CheckBox>
-        <TextBlock x:Name="ViableText" RelativePanel.LeftOf="ViableCheck" FontSize="35" RelativePanel.AlignBottomWith="ViableCheck" RelativePanel.AlignLeftWithPanel="True" TextAlignment="Left" Margin="100,0,50,0" >Viable</TextBlock>
+        <CheckBox x:Name="ViableCheck" RelativePanel.RightOf="ViableText" RelativePanel.Below="Title" RelativePanel.AlignRightWithPanel="True" Margin="0,120,50,0"></CheckBox>
+        <TextBlock x:Name="ViableText" RelativePanel.RightOf="Save" Margin="0,0,50,0" FontSize="35" RelativePanel.AlignBottomWith="Save" TextAlignment="Left">Viable</TextBlock>
 
-        <TextBox RelativePanel.Below="ViableText" TextWrapping="Wrap" RelativePanel.AlignRightWith="ViableCheck" RelativePanel.AlignLeftWith="ViableText" RelativePanel.AlignBottomWithPanel="True" Margin="100" ></TextBox>
+        <TextBox Name="Nota" RelativePanel.Below="ViableCheck" TextWrapping="Wrap" RelativePanel.AlignRightWith="ViableCheck" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Margin="20" ></TextBox>
+        <AppBarButton x:Name="Save" Icon="Save" Label="Guardar"  RelativePanel.Below="Title"  Margin="20,100,0,0"></AppBarButton>
+        <AppBarButton x:Name="Back" Icon="Back" Click="Back_Click"></AppBarButton>
         
     </RelativePanel>
 </Page>

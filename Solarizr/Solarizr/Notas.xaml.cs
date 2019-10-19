@@ -28,5 +28,9 @@ namespace Solarizr
             this.InitializeComponent();
         }
 
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainCitas));
+        }
     }
 }
