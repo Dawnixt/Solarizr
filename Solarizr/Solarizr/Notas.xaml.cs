@@ -47,34 +47,40 @@ namespace Solarizr
         }
 
         private void myNavigation_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args) {
-
-            TextBlock ItemContent = args.InvokedItem as TextBlock;
-            if (ItemContent != null)
+            if (args.IsSettingsInvoked)
             {
-                switch (ItemContent.Tag)
+                contentFrame.Navigate(typeof(Notas));
+            }
+            else
+            {
+                TextBlock ItemContent = args.InvokedItem as TextBlock;
+                if (ItemContent != null)
                 {
+                    switch (ItemContent.Tag)
+                    {
 
-                    case "Nav_Citas":
-                        contentFrame.Navigate(typeof(MainCitas));
-                        break;
+                        case "Nav_Citas":
+                            contentFrame.Navigate(typeof(MainCitas));
+                            break;
 
-                    case "Nav_Notas":
-                        contentFrame.Navigate(typeof(Notas));
-                        break;
+                        case "Nav_Notas":
+                            contentFrame.Navigate(typeof(Notas));
+                            break;
 
-                    case "Nav_Setting":
-                        contentFrame.Navigate(typeof(MainCitas));
-                        break;
+                        case "Nav_Setting":
+                            contentFrame.Navigate(typeof(MainCitas));
+                            break;
 
-                    case "Nav_Acerca":
-                        contentFrame.Navigate(typeof(MainCitas));
-                        break;
+                        case "Nav_Acerca":
+                            contentFrame.Navigate(typeof(MainCitas));
+                            break;
 
-                    case "Nav_Out":
-                        contentFrame.Navigate(typeof(MainPage));
-                        break;
+                        case "Nav_Out":
+                            contentFrame.Navigate(typeof(MainPage));
+                            break;
+                    }
+
                 }
-
             }
         }
         #endregion
