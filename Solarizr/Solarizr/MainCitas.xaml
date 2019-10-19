@@ -12,8 +12,8 @@
 
     <RelativePanel Name="rltvp1">
 
-        <ListView Name="Lista" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Height="auto"
-                  SelectionChanged="Lista_SelectionChanged">
+        <ListView Name="Lista"  RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Height="auto"
+                  SelectionChanged="Lista_SelectionChanged" RelativePanel.AlignLeftWithPanel="True">
             <StackPanel Name="stcp1" Margin="0,20" >
                 <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
                 <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
@@ -21,10 +21,10 @@
             </StackPanel>
 
             <StackPanel Name="stcp2" Margin="0,20">
-                    <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
-                    <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
-                    <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
-                </StackPanel>
+                <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
+            </StackPanel>
 
             <StackPanel Name="stcp3" Margin="0,20">
                 <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
@@ -39,22 +39,22 @@
             </StackPanel>
 
             <StackPanel Name="stcp5" Margin="0,20">
-                        <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
-                        <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
-                        <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
-                    </StackPanel>
+                <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
+            </StackPanel>
 
             <StackPanel Name="stcp6" Margin="0,20">
-                        <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
-                        <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
-                        <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
-                    </StackPanel>
+                <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
+            </StackPanel>
 
             <StackPanel Name="stcp7" Margin="0,20">
-                    <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
-                    <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
-                    <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
-                </StackPanel>
+                <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
+            </StackPanel>
         </ListView>
     </RelativePanel>
 </Page>

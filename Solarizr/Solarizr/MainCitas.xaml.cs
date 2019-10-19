@@ -31,5 +31,6 @@ namespace Solarizr
         private void Lista_SelectionChanged(object sender, SelectionChangedEventArgs e) {
             this.Frame.Navigate(typeof(citas));
         }
+
     }
 }
