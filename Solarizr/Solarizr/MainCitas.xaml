@@ -7,33 +7,54 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local1="using:Windows.ApplicationModel.Contacts"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    >
 
-    <RelativePanel>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="0,608,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="84,608,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+    <RelativePanel Name="rltvp1">
 
-        <ListView x:Name="ContactsLV" ItemsSource="">
-            <ListView.ItemTemplate>
-                <DataTemplate x:DataType="local1:Contact">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Image Grid.Column="0" Grid.RowSpan="2" Source="Assets/grey-placeholder.png" Width="32"
-                    Height="32" HorizontalAlignment="Center" VerticalAlignment="Center"></Image>
-                        <TextBlock Grid.Column="1" Text="hola" Margin="12,6,0,0" 
-                    Style="{ThemeResource BaseTextBlockStyle}"/>
-                        <TextBlock  Grid.Column="1" Grid.Row="1" Text="Hola" Margin="12,0,0,6" 
-                    Style="{ThemeResource BodyTextBlockStyle}"/>
-                    </Grid>
-                </DataTemplate>
-            </ListView.ItemTemplate>
+        <ListView Name="Lista" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Height="auto"
+                  SelectionChanged="Lista_SelectionChanged">
+            <StackPanel Name="stcp1" Margin="0,20" >
+                <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
+            </StackPanel>
+
+            <StackPanel Name="stcp2" Margin="0,20">
+                    <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                    <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                    <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
+                </StackPanel>
+
+            <StackPanel Name="stcp3" Margin="0,20">
+                <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
+            </StackPanel>
+
+            <StackPanel Name="stcp4" Margin="0,20">
+                <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
+            </StackPanel>
+
+            <StackPanel Name="stcp5" Margin="0,20">
+                        <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                        <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                        <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
+                    </StackPanel>
+
+            <StackPanel Name="stcp6" Margin="0,20">
+                        <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                        <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                        <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
+                    </StackPanel>
+
+            <StackPanel Name="stcp7" Margin="0,20">
+                    <TextBlock Text="Cita:"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                    <TextBlock Text="Hora:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                    <TextBlock Text="Asunto:" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
+                </StackPanel>
         </ListView>
     </RelativePanel>
 </Page>
