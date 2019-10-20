@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -33,6 +34,11 @@ namespace Solarizr
 
         private void BtnLogin_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainCitas));
+        }
+
+        private async void HyperlinkButton_Click(object sender, RoutedEventArgs e) {
+            var dialog = new MessageDialog("La hubieras apuntado, crack.");
+            await dialog.ShowAsync();
         }
     }
 }

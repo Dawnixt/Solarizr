@@ -9,33 +9,40 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <RelativePanel>
-
+            
+        <!--Esto no tiene sentido-->
         <StackPanel x:Name="Title" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBlock FontSize="60">Fotos</TextBlock>
         </StackPanel>
 
         <AppBarButton x:Name="More" Icon="Attach" Label="Adjuntar" RelativePanel.AlignBottomWithPanel="True" Margin="30"></AppBarButton>
-
-        <AppBarButton Icon="Back"></AppBarButton>
+        <AppBarButton Icon="Back" Click="AppBarButton_Click"></AppBarButton>
 
         <Grid RelativePanel.Above="More" RelativePanel.Below="Title" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True">
-
             <Grid.ColumnDefinitions>
-
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
-                
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
-                
             </Grid.RowDefinitions>
-            
+
+            <Image Source="Assets/tejado1.jpg" Grid.Row="0" Grid.Column="0" Stretch="Fill"></Image>
+            <Image Source="Assets/tejado2.jpg" Grid.Row="0" Grid.Column="1" Stretch="Fill"></Image>
+            <Image Source="Assets/tejado3.jpg" Grid.Row="0" Grid.Column="2" Stretch="Fill"></Image>
+
+            <Image Source="Assets/tejado1.jpg" Grid.Row="1" Grid.Column="0" Stretch="Fill"></Image>
+            <Image Source="Assets/tejado2.jpg" Grid.Row="1" Grid.Column="1" Stretch="Fill"></Image>
+            <Image Source="Assets/tejado3.jpg" Grid.Row="1" Grid.Column="2" Stretch="Fill"></Image>
+
+            <Image Source="Assets/tejado1.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"></Image>
+            <Image Source="Assets/tejado2.jpg" Grid.Row="2" Grid.Column="1" Stretch="Fill"></Image>
+            <Image Source="Assets/tejado3.jpg" Grid.Row="2" Grid.Column="2" Stretch="Fill"></Image>
+
             <!--He hecho esto no se si te gustara-->
             
         </Grid>

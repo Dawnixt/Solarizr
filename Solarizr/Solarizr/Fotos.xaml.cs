@@ -26,5 +26,9 @@ namespace Solarizr
         {
             this.InitializeComponent();
         }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(citas));
+        }
     }
 }
