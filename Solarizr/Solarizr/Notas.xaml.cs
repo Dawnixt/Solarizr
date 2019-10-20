@@ -30,7 +30,7 @@ namespace Solarizr
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainCitas));
+            this.Frame.Navigate(typeof(citas));
         }
     }
 }

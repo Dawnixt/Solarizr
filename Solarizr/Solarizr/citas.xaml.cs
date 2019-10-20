@@ -30,5 +30,9 @@ namespace Solarizr
         private void AppBarButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Notas));
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(MainCitas));
+        }
     }
 }

@@ -13,7 +13,7 @@
     <RelativePanel Name="rltvp1">
         
         <AppBarButton Icon="ContactPresence" Name="back" Margin="0,20"></AppBarButton>
-        <AppBarButton Icon="ClosePane" Name="close" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Label="Salir"></AppBarButton>
+        <AppBarButton Icon="ClosePane" Name="close" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Label="Salir" Click="Close_Click"></AppBarButton>
         <AppBarButton Icon="Setting" RelativePanel.Above="close"></AppBarButton>
         
         <ListView Name="Lista"  RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Height="auto"
