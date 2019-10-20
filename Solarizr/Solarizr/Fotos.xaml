@@ -8,7 +8,37 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <RelativePanel>
 
-    </Grid>
+        <StackPanel x:Name="Title" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock FontSize="60">Fotos</TextBlock>
+        </StackPanel>
+
+        <AppBarButton x:Name="More" Icon="Attach" Label="Adjuntar" RelativePanel.AlignBottomWithPanel="True" Margin="30"></AppBarButton>
+
+        <AppBarButton Icon="Back"></AppBarButton>
+
+        <Grid RelativePanel.Above="More" RelativePanel.Below="Title" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True">
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                
+            </Grid.RowDefinitions>
+            
+            <!--He hecho esto no se si te gustara-->
+            
+        </Grid>
+        
+    </RelativePanel>
 </Page>
