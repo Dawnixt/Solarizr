@@ -9,11 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <RelativePanel>
-            
-        <!--Esto no tiene sentido-->
-        <StackPanel x:Name="Title" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock FontSize="60">Fotos</TextBlock>
-        </StackPanel>
+        <TextBlock Name="Title" FontSize="60" RelativePanel.AlignHorizontalCenterWithPanel="True" Style="{ThemeResource BaseTextBlockStyle}">Fotos</TextBlock>
 
         <AppBarButton x:Name="More" Icon="Attach" Label="Adjuntar" RelativePanel.AlignBottomWithPanel="True" Margin="30"></AppBarButton>
         <AppBarButton Icon="Back" Click="AppBarButton_Click"></AppBarButton>
@@ -31,7 +27,7 @@
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Image Source="Assets/tejado1.jpg" Grid.Row="0" Grid.Column="0" Stretch="Fill"></Image>
+            <Image Source="Assets/tejado1.jpg" Grid.Row="0" Grid.Column="0" Stretch="Fill" ></Image>
             <Image Source="Assets/tejado2.jpg" Grid.Row="0" Grid.Column="1" Stretch="Fill"></Image>
             <Image Source="Assets/tejado3.jpg" Grid.Row="0" Grid.Column="2" Stretch="Fill"></Image>
 
