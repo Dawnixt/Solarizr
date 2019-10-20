@@ -122,6 +122,9 @@
     <Compile Include="citas.xaml.cs">
       <DependentUpon>citas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Fotos.xaml.cs">
+      <DependentUpon>Fotos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainCitas.xaml.cs">
       <DependentUpon>MainCitas.xaml</DependentUpon>
     </Compile>
@@ -156,6 +159,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="citas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fotos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
