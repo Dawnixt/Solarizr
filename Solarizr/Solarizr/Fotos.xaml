@@ -38,9 +38,6 @@
             <Image Source="Assets/tejado1.jpg" Grid.Row="2" Grid.Column="0" Stretch="Fill"></Image>
             <Image Source="Assets/tejado2.jpg" Grid.Row="2" Grid.Column="1" Stretch="Fill"></Image>
             <Image Source="Assets/tejado3.jpg" Grid.Row="2" Grid.Column="2" Stretch="Fill"></Image>
-
-            <!--He hecho esto no se si te gustara-->
-            
         </Grid>
         
     </RelativePanel>

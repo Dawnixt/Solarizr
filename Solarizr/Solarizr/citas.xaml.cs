@@ -26,15 +26,28 @@ namespace Solarizr
         {
             this.InitializeComponent();
         }
-
+        /// <summary>
+        /// Evento asociado al click del boton. Te lleva a la pagina de Notas.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AppBarButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Notas));
         }
-
+        /// <summary>
+        /// Evento asociado al click del boton. Te lleva a la paginas de MainCitas.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Back_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainCitas));
         }
 
+        /// <summary>
+        /// Evento asociado al click del boton. Te lleva a la pagina de Fotos.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AppBarButton_Click_1(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Fotos));
         }

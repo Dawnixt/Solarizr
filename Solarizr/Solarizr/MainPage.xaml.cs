@@ -31,11 +31,20 @@ namespace Solarizr
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size { Width = 600, Height = 800 });
         }
-
+        /// <summary>
+        /// Evento asociado al click del boton. Te lleva a la pagina MainCitas.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnLogin_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainCitas));
         }
 
+        /// <summary>
+        /// Evento asociado al click del HyperLink. Te muestra un mensaje en pantalla.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void HyperlinkButton_Click(object sender, RoutedEventArgs e) {
             var dialog = new MessageDialog("La hubieras apuntado, crack.");
             await dialog.ShowAsync();

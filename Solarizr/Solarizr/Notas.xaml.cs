@@ -27,7 +27,11 @@ namespace Solarizr
         public Notas() {
             this.InitializeComponent();
         }
-
+        /// <summary>
+        /// Evento asociado al click del boton. Te lleva a la pagina citas.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(citas));

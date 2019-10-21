@@ -30,11 +30,20 @@ namespace Solarizr
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size { Width = 600, Height = 800 });
         }
-
+        /// <summary>
+        /// Evento asociado al click en la lista. Te lleva a la pagina de cotas,
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Lista_SelectionChanged(object sender, SelectionChangedEventArgs e) {
             this.Frame.Navigate(typeof(citas));
         }
 
+        /// <summary>
+        /// Evento asociado al boton. Te lleva a la pagina MainPage
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Close_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainPage));
         }

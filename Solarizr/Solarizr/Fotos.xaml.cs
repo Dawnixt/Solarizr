@@ -26,7 +26,11 @@ namespace Solarizr
         {
             this.InitializeComponent();
         }
-
+        /// <summary>
+        /// Evento asociado al click del boton. Te lleva a la pagina de citas.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AppBarButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(citas));
         }

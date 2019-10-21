@@ -15,7 +15,7 @@
         <TextBlock Name="viabletxt" FontSize="35" Text="Viable" Margin="10,0" RelativePanel.Below="Title"></TextBlock>
         <CheckBox x:Name="ViableCheck" RelativePanel.RightOf="viabletxt" RelativePanel.AlignVerticalCenterWith="viabletxt"></CheckBox>
 
-        <TextBox Name="Nota" TextWrapping="Wrap" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Margin="10" RelativePanel.Below="ViableCheck"></TextBox>
+        <TextBox Name="Nota" TextWrapping="Wrap" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Margin="10,0,10,10" RelativePanel.Below="ViableCheck"></TextBox>
         <AppBarButton x:Name="Save" Icon="Save" Label="Guardar" RelativePanel.AlignRightWithPanel="True" RelativePanel.Above="Nota"></AppBarButton>
         <AppBarButton x:Name="Back" Icon="Back" Click="Back_Click"></AppBarButton>
         
